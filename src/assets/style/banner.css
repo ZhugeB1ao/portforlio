@@ -1,0 +1,59 @@
+header {
+    display: flex;
+    margin-top: 12%;
+    column-gap: 5%;
+}
+
+.banner-container-1 {
+    flex: 3;
+    font-size: xx-large;
+    padding-top: 5%
+}
+
+.banner-container-1 > h4 {
+    border-radius: 5px;
+    border: 1.5px solid lightgray;
+    width: fit-content;
+    padding: 12px;
+    background: linear-gradient(to right, #642956, #38246d);
+}
+
+.banner-container-1 h1 {
+    padding: 12px 0;
+}
+
+.banner-container-1 p {
+    opacity: 0.7;
+    font-size: x-large;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    padding-top: 12px;
+}
+
+.banner-container-1 .connect-content {
+    display: flex;
+    padding-top: 64px;
+}
+
+.banner-container-1 .connect-content .c-arr-r-icon{
+    width: 48px;
+    height: 48px;
+    margin-left: 12px;
+}
+
+.banner-container-2 {
+    flex: 2;
+    height: 80%;
+    animation: upAndDown 2s infinite alternate;
+    z-index: 1;
+}
+
+@keyframes upAndDown {
+    from{
+        transform: translateY(-48px) ;
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
