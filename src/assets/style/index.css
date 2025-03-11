@@ -24,15 +24,19 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 75px;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
     font-weight: 400;
     overflow-x: hidden;
-    position: relative;
-    background-image: url(../img/banner-bg.png);
     color: white !important;
+    background-image: url(../img/banner-bg.png);
     font-family: Centra, sans-serif !important;
     letter-spacing: 1px;
 }

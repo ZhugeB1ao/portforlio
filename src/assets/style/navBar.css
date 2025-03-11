@@ -1,9 +1,13 @@
 nav {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 85%;
     padding: 36px 0;
     font-size: 24px;
+    animation: appear 1s ease-in;
+    z-index: 2;
+    position: fixed;
+    
 }
 
 .nav-container-1 {
@@ -35,6 +39,10 @@ nav {
 .nav-container-2-ul-1 li{
     opacity: 0.5;
 }
+.nav-container-2-ul-1 li:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
 
 .nav-container-2-ul-1 .active {
     opacity: 1 !important;
@@ -44,6 +52,10 @@ nav {
     flex: 2;
 }
 
+.nav-container-2-ul-2 li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 .nav-container-2-ul-2 li {
     border-radius: 50%;
     border: white 1px solid;
@@ -76,5 +88,20 @@ nav {
     border-radius: 10px;
 }
 
+.nav-container-2-connect-btn:hover {
+    transform: scale(1.1);
+    background: white;
+    color: black;
+    transition: 0.5s;
+    opacity: 0.8;
+}
 
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
