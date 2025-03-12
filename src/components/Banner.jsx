@@ -41,14 +41,14 @@ const Banner = () => {
   }, [charIndex, isTyping]);
 
   return (
-    <section id='banner'>
+    <section id="banner">
       <header>
         <div className="banner-container-1">
           <h4>Welcome to my Portfolio</h4>
-          <h1>
+          <h2>
             Hi! I'm Gia Bao <span className="text">{text}</span>
             <span className="cursor">|</span>
-          </h1>
+          </h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text

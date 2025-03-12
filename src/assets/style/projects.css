@@ -1,8 +1,19 @@
-section {
+#projects {
+  min-width: 100vh;
+  min-height: 100vh;
+  background-image: url('../img/5539148.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 85%;
+  height: 100%;
 }
 
 .projects-container {
@@ -26,7 +37,6 @@ section {
   height: 100%;
   border-radius: 25px;
 }
-
 
 .project .project-info {
   position: absolute;
