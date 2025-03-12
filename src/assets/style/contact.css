@@ -1,40 +1,87 @@
 #contact {
-    min-width: 100vw;
-    min-height: 100vh;
-    background: linear-gradient(to right, #642956, #38246d);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to right, #982e71, #4929a6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #contact-section {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    width: 85%;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  height: 85%;
 }
 
 .contact-container-1 {
-    width: 50%;
-    height: 100%;
+  flex: 1;
 }
 
 .contact-container-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    background-color: violet;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
 }
 
 .contact-container-2 .input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin: 5% 0;
+  height: 45%;
+}
+
+.input-css {
+  border-radius: 20px;
+  padding: 5%;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: x-large;
+  font-family: Centra, sans-serif;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  font-size: x-large;
+  font-family: Centra, sans-serif;
+}
+
+.input-message {
+  grid-area: 3 / 1 / 5 / 3;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding-left: 2.5%;
+  padding-bottom: 12%;
+  background: transparent;
+  color: white;
+  font-size: x-large;
+  font-family: Centra, sans-serif;
+}
+
+.contact-title {
+  font-size: 64px;
+}
+
+.send-button {
+  width: 20%;
+  height: 10%;
+  color: white;
+  background: none;
+  font-size: x-large;
+  font-family: Centra, sans-serif;
+  border-radius: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background: white;
+  color: black;
+  transition: 0.5s;
+  opacity: 0.8;
 }

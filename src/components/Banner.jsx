@@ -41,7 +41,7 @@ const Banner = () => {
   }, [charIndex, isTyping]);
 
   return (
-    <section id="banner">
+    <div id="banner">
       <header>
         <div className="banner-container-1">
           <h4>Welcome to my Portfolio</h4>
@@ -65,7 +65,7 @@ const Banner = () => {
           <img src={headerImg} alt="This is a header image" />
         </div>
       </header>
-    </section>
+    </div>
   );
 };
 

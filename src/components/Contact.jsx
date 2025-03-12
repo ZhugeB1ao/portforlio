@@ -9,27 +9,27 @@ const Contact = () => {
         </div>
 
         <div className="contact-container-2">
-          <h2 className="contact-title">Get In Touch</h2>
+          <h1 className="contact-title">Get In Touch</h1>
           <div className="input-container">
             <input
               type="text"
-              className="input-first-name"
+              className="input-first-name input-css"
               placeholder="First Name"
             />
             <input
               type="text"
-              className="input-last-name"
+              className="input-last-name input-css"
               placeholder="Last Name"
             />
             <input
               type="email"
-              className="input-email"
+              className="input-email input-css"
               placeholder="Email Address"
             />
             <input
               type="tel"
-              className="input-phone-number"
-              placeholder="Phone Number"
+              className="input-phone-number input-css"
+              placeholder="Phone No."
             />
             <input
               type="text"
