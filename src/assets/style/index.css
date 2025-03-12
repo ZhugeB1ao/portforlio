@@ -36,10 +36,11 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     color: white !important;
-    background-image: url(../img/banner-bg.png);
     font-family: Centra, sans-serif !important;
     letter-spacing: 1px;
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
     padding: 0;
@@ -47,12 +48,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: normal;
 }
 
-#root{
+/* #root{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-#App {
+/* #App {
     width: 85%;
-}
+} */
