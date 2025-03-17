@@ -4,17 +4,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: linear-gradient(to top, #2e2552, #3f2435); */
-  background-color: black;
+  background: linear-gradient(to top, #2e2552, #3f2435);
 }
 
 #skills-section {
-  height: 85%;
-  width: 85%;
+  height: 65%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
+  background-color: black;
 }
 
 #skills-section h1 {
@@ -28,9 +29,6 @@
   justify-content: center;
   align-items: center;
   list-style-type: none;
-}
-
-.skill {
 }
 
 .skills-container li {

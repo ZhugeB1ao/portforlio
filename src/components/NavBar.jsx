@@ -2,11 +2,15 @@ import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../assets/style/navBar.css";
 
-const NavBar = () => {
-  const [activeLink, setActiveLink] = useState("home");
+const NavBar = ({ activeSection }) => {
+  const [activeLink, setActiveLink] = useState("");
+
+  useEffect(() => {
+    setActiveLink(activeSection.toLowerCase());
+  }, [activeSection]);
 
   return (
     <nav>
@@ -17,14 +21,17 @@ const NavBar = () => {
 
         <div className="nav-container-2">
           <ul className="nav-container-2-ul-1">
-            <li className="active">
-              <a href="#home">Home</a>
+            <li className={activeLink === "banner" ? "active" : ""}>
+              <a href="#banner">Home</a>
             </li>
-            <li>
+            <li className={activeLink === "skills" ? "active" : ""}>
               <a href="#skills">Skills</a>
             </li>
-            <li>
+            <li className={activeLink === "projects" ? "active" : ""}>
               <a href="#projects">Projects</a>
+            </li>
+            <li className={activeLink === "contact" ? "active" : ""}>  
+              <a href="#contact">Contact</a>
             </li>
           </ul>
 
