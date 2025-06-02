@@ -1,5 +1,6 @@
 import contactImg from "../assets/img/contact-img.svg";
 import "../assets/style/contact.css";
+
 const Contact = () => {
   return (
     <div id="contact">

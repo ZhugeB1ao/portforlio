@@ -1,11 +1,8 @@
 #contact {
-  min-width: 100vw;
-  min-height: 100vh;
-  background: linear-gradient(to right, #982e71, #4929a6);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 #contact-section {
