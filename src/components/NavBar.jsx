@@ -17,6 +17,7 @@ const NavBar = ({
 
     useEffect(() => {
         setActiveLink(activeSection);
+        console.log("Active link updated to:", activeSection);
     }, [activeSection]);
 
     return (
